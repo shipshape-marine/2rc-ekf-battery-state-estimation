@@ -8,7 +8,7 @@ from pathlib import Path
 DATASET = os.environ.get("CALIBRATION_DATASET", "LiFePO4")
 
 _HERE = Path(__file__).resolve().parent
-_TEST_DATA = _HERE.parent.parent / "proa_advisor" / "model" / "battery_model" / "test_data"
+_TEST_DATA = _HERE / "Raw battery data"
 
 DATASETS = {
     # Channels specified here due to wiring mismatches during testing
